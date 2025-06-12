@@ -1,0 +1,31 @@
+class Hewan {
+    String nama;
+    String jenis;
+    String suara;
+    void tampilkanInfo() {
+        System.out.println("Nama :" + nama);
+        System.out.println("Jenis :" + jenis);
+        System.out.println("Suara :" + suara);
+    }
+}
+
+
+
+
+
+class main {
+    public static void main(String[] args) {
+        Hewan hewan1 = new Hewan();
+        Hewan hewan2 = new Hewan();
+        hewan1.nama = "Kucing";
+        hewan2.nama = "Anjing";
+        hewan1.jenis = "Mamalia";
+        hewan2.jenis = "Mamalia";
+        hewan1.suara = "Nyann~~";
+        hewan2.suara = "Woof-Woof!!";
+        System.out.println("=====Informasi Hewan 1=====");
+        hewan1.tampilkanInfo();
+        System.out.println("=====Informasi Hewan 2======");
+        hewan2.tampilkanInfo();
+    }
+}
